@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "carts",
+  "info": {
+    "singularName": "cart",
+    "pluralName": "carts",
+    "displayName": "cart"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user_Name": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "proudcts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::proudct.proudct"
+    }
+  }
+}
